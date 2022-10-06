@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-06T12:01:11.467Z</updated>
+  <updated>2022-10-06T14:28:16.325Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack介绍</title>
+    <link href="http://example.com/2022/10/06/webpack-jie-shao/"/>
+    <id>http://example.com/2022/10/06/webpack-jie-shao/</id>
+    <published>2022-10-06T14:23:56.000Z</published>
+    <updated>2022-10-06T14:28:16.325Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;webpack是一个可以将项目进行规范化、将项目打包压缩的工具&lt;/p&gt;
+&lt;h3 id=&quot;初始化&quot;&gt;&lt;a href=&quot;#初始化&quot; class=&quot;headerlink&quot; title=&quot;初始化&quot;&gt;&lt;/a&gt;初始化&lt;/h3&gt;&lt;p&gt;终端使用&lt;code&gt;npm init</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="webpack" scheme="http://example.com/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue-cli创建项目</title>
+    <link href="http://example.com/2022/10/06/vue-cli-chuang-jian-xiang-mu/"/>
+    <id>http://example.com/2022/10/06/vue-cli-chuang-jian-xiang-mu/</id>
+    <published>2022-10-06T14:21:53.000Z</published>
+    <updated>2022-10-06T14:28:11.558Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在实际项目中都是用vue-cli进行搭建项目，不用自己配置webpack。&lt;/p&gt;
+&lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;p&gt;使用&lt;code&gt;npm i @vue/cli</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="vue" scheme="http://example.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>npm的使用</title>
+    <link href="http://example.com/2022/10/06/npm-de-shi-yong/"/>
+    <id>http://example.com/2022/10/06/npm-de-shi-yong/</id>
+    <published>2022-10-06T14:08:21.000Z</published>
+    <updated>2022-10-06T14:29:59.694Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;npm是一个包管理工具，所谓的包也就是第三方模块，好比如jQuery这些，当然我们也可以自定义模块，但是在实际应用中都是导入包来实现功能。npm是跟随着node.js的下载而有的，可以通过npm -v来查看版本号。&lt;/p&gt;
+&lt;h4 id=&quot;项目新建&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技能学习" scheme="http://example.com/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="npm" scheme="http://example.com/tags/npm/"/>
+    
+  </entry>
   
   <entry>
     <title>git的简单使用</title>
@@ -41,53 +121,6 @@
     
     
     <category term="git" scheme="http://example.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一篇文章</title>
-    <link href="http://example.com/2022/10/05/di-yi-pian-wen-zhang/"/>
-    <id>http://example.com/2022/10/05/di-yi-pian-wen-zhang/</id>
-    <published>2022-10-05T12:35:47.000Z</published>
-    <updated>2022-10-06T12:01:42.133Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h3&gt;&lt;p&gt;人生啊&lt;/p&gt;
-&lt;h3 id=&quot;标题-1&quot;&gt;&lt;a href=&quot;#标题-1&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="测试" scheme="http://example.com/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="test" scheme="http://example.com/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/10/05/hello-world/"/>
-    <id>http://example.com/2022/10/05/hello-world/</id>
-    <published>2022-10-05T10:56:13.065Z</published>
-    <updated>2022-10-05T10:56:13.066Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
