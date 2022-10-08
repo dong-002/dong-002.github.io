@@ -34,11 +34,15 @@
 }
 
 body {
-    background-color: #eaeaea;
+    /* background-color: #eaeaea;
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto; */
+    background: linear-gradient(60deg, rgba(255, 165, 150, 0.8) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover,  url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;
+    background-attachment: fixed;
+    margin: 0;
+    color: #7F95D1;
 }
 
 h1 {
@@ -566,7 +570,6 @@ header .go-back i {
     left: 0;
     top: 0;
     content: "";
-    
 }
 
 .bg-cover .container {
@@ -2301,4 +2304,18 @@ body.DarkMode .theme-btn:hover {
 #busuanzi_value_site_pv,
 #busuanzi_container_site_uv{
    display: inline !important;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+    background-color: #c6ef65;
+    border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+    background-color: #ffcacaff;
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
 }

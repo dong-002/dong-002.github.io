@@ -3,11 +3,11 @@
   <title>Dong&#39;s Blog</title>
   
   <subtitle>苹果派~~</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://dong-002.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://dong-002.github.io/"/>
   <updated>2022-10-06T14:28:16.325Z</updated>
-  <id>http://example.com/</id>
+  <id>http://dong-002.github.io/</id>
   
   <author>
     <name>Dong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>webpack介绍</title>
-    <link href="http://example.com/2022/10/06/webpack-jie-shao/"/>
-    <id>http://example.com/2022/10/06/webpack-jie-shao/</id>
+    <link href="http://dong-002.github.io/2022/10/06/webpack-jie-shao/"/>
+    <id>http://dong-002.github.io/2022/10/06/webpack-jie-shao/</id>
     <published>2022-10-06T14:23:56.000Z</published>
     <updated>2022-10-06T14:28:16.325Z</updated>
     
@@ -35,17 +35,17 @@
     
     
     
-    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://dong-002.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="webpack" scheme="http://example.com/tags/webpack/"/>
+    <category term="webpack" scheme="http://dong-002.github.io/tags/webpack/"/>
     
   </entry>
   
   <entry>
     <title>vue-cli创建项目</title>
-    <link href="http://example.com/2022/10/06/vue-cli-chuang-jian-xiang-mu/"/>
-    <id>http://example.com/2022/10/06/vue-cli-chuang-jian-xiang-mu/</id>
+    <link href="http://dong-002.github.io/2022/10/06/vue-cli-chuang-jian-xiang-mu/"/>
+    <id>http://dong-002.github.io/2022/10/06/vue-cli-chuang-jian-xiang-mu/</id>
     <published>2022-10-06T14:21:53.000Z</published>
     <updated>2022-10-06T14:28:11.558Z</updated>
     
@@ -61,17 +61,17 @@
     
     
     
-    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://dong-002.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="vue" scheme="http://example.com/tags/vue/"/>
+    <category term="vue" scheme="http://dong-002.github.io/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>npm的使用</title>
-    <link href="http://example.com/2022/10/06/npm-de-shi-yong/"/>
-    <id>http://example.com/2022/10/06/npm-de-shi-yong/</id>
+    <link href="http://dong-002.github.io/2022/10/06/npm-de-shi-yong/"/>
+    <id>http://dong-002.github.io/2022/10/06/npm-de-shi-yong/</id>
     <published>2022-10-06T14:08:21.000Z</published>
     <updated>2022-10-06T14:29:59.694Z</updated>
     
@@ -87,19 +87,19 @@
     
     
     
-    <category term="技能学习" scheme="http://example.com/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/"/>
+    <category term="技能学习" scheme="http://dong-002.github.io/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="http://dong-002.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="npm" scheme="http://example.com/tags/npm/"/>
+    <category term="npm" scheme="http://dong-002.github.io/tags/npm/"/>
     
   </entry>
   
   <entry>
     <title>git的简单使用</title>
-    <link href="http://example.com/2022/10/06/git-de-jian-dan-shi-yong/"/>
-    <id>http://example.com/2022/10/06/git-de-jian-dan-shi-yong/</id>
+    <link href="http://dong-002.github.io/2022/10/06/git-de-jian-dan-shi-yong/"/>
+    <id>http://dong-002.github.io/2022/10/06/git-de-jian-dan-shi-yong/</id>
     <published>2022-10-06T09:39:53.000Z</published>
     <updated>2022-10-06T12:01:11.467Z</updated>
     
@@ -117,10 +117,10 @@
     
     
     
-    <category term="技能学习" scheme="http://example.com/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/"/>
+    <category term="技能学习" scheme="http://dong-002.github.io/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="git" scheme="http://example.com/tags/git/"/>
+    <category term="git" scheme="http://dong-002.github.io/tags/git/"/>
     
   </entry>
   
