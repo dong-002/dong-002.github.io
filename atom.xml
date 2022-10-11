@@ -6,7 +6,7 @@
   <link href="http://dong-002.github.io/atom.xml" rel="self"/>
   
   <link href="http://dong-002.github.io/"/>
-  <updated>2022-10-06T14:28:16.325Z</updated>
+  <updated>2022-10-11T15:14:13.087Z</updated>
   <id>http://dong-002.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>主题修改</title>
+    <link href="http://dong-002.github.io/2022/10/11/zhu-ti-xiu-gai/"/>
+    <id>http://dong-002.github.io/2022/10/11/zhu-ti-xiu-gai/</id>
+    <published>2022-10-11T02:34:00.000Z</published>
+    <updated>2022-10-11T15:14:13.087Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近折腾了一下怎么搭建博客，记录一下吧。这里用的是hexo框架搭建的，主题为matery，整个搭建过程都是一边看着网上的教程弄的，但是有些地方是弄了很久才弄出来的，这里只是记录一下修改的过程，搭建和部署到GitHub上网上就有很多。&lt;/p&gt;
+&lt;h2 id=&quot;外观&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="随笔" scheme="http://dong-002.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="matery" scheme="http://dong-002.github.io/tags/matery/"/>
+    
+    <category term="hexo" scheme="http://dong-002.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>webpack介绍</title>
