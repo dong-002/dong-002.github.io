@@ -399,7 +399,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-10-06
+                    2022-10-16
                 </div>
                 
 
@@ -433,19 +433,19 @@
             <div id="articleContent">
                 <p>npm是一个包管理工具，所谓的包也就是第三方模块，好比如jQuery这些，当然我们也可以自定义模块，但是在实际应用中都是导入包来实现功能。npm是跟随着node.js的下载而有的，可以通过npm -v来查看版本号。</p>
 <h4 id="项目新建"><a href="#项目新建" class="headerlink" title="项目新建"></a>项目新建</h4><p>在新建项目时在项目根目录用终端执行npm init -y来创建一个package.json文件，这个文件用来记录这个项目用到了哪些包，这些包都在node_modules文件中存放。</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220731171811789.png" alt="image-20220731171811789"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220731171811789.png"></p>
 <h4 id="下载包"><a href="#下载包" class="headerlink" title="下载包"></a>下载包</h4><p>项目中由于包占用的内存太大，用git提交项目要把node_modules文件包含在gitignore中，这样就省略所用的包，只是包源码提交，从Gitee或GitHub下载项目只是源码，要在终端执行<code>npm install</code>命令就会自动下载项目所依赖的包，这样项目才能跑起来。</p>
 <p>package.json文件中的dependencies记录了下载了哪些包和版本号，例如下面就是用到了jQuery包。</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220731172100367.png" alt="image-20220731172100367"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220731172100367.png"></p>
 <h4 id="存放到Dev"><a href="#存放到Dev" class="headerlink" title="存放到Dev"></a>存放到Dev</h4><p>在开发用到的包但是在项目上线后不再使用放到devDependencies节点中，在项目上线后还要使用的就放到dependencies节点中。</p>
 <p>使用npm i 包名 -D这样就会自动把包放到Dev节点中。</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220731172943102.png" alt="image-20220731172943102"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220731172943102.png"></p>
 <h4 id="删除包"><a href="#删除包" class="headerlink" title="删除包"></a>删除包</h4><p>不使用包可以通过npm unistall 包名来删除对应的包，这样还会在dependencies中删除包的名字。</p>
 <hr>
 <h4 id="淘宝镜像npm"><a href="#淘宝镜像npm" class="headerlink" title="淘宝镜像npm"></a>淘宝镜像npm</h4><p>由于原来的npm下载包是在国外的服务器所以下载得比较慢，但是在国内淘宝做了一个镜像同步国外的npm，我们可以通过切换下载的镜像源为淘宝，这样就可以提高速度。</p>
 <p>查看镜像源 <code>npm config get registry</code></p>
 <p>将镜像源改为淘宝镜像 <code>npm config set registry=https://registry.npm.taobao.org/</code></p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220731174912803.png" alt="image-20220731174912803"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220731174912803.png"></p>
 <p>将镜像源切换为国内之后下载速度就会提高。</p>
 
                 
@@ -1059,7 +1059,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4.7k</span>
+                        class="white-color">5.3k</span>
             
             
             

@@ -399,14 +399,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-10-12
+                    2022-10-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    2.3k
                 </div>
                 
 
@@ -432,14 +432,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>最近折腾了一下怎么搭建博客，记录一下吧。这里用的是hexo框架搭建的，主题为matery，整个搭建过程都是一边看着网上的教程弄的，但是有些地方是弄了很久才弄出来的，这里只是记录一下修改的过程，搭建和部署到GitHub上网上就有很多。</p>
-<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><p>在根目录下有一个名为<code>_config.yml</code>的文件，在里面可以修改主页的标题等。<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011105118770.png" alt="修改标题"></p>
+<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><p>在根目录下有一个名为<code>_config.yml</code>的文件，在里面可以修改主页的标题等。<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011105118770.png"></p>
 <p>然后在<code>themes</code>下也有一个<code>_config.yml</code>的文件，在这面是修改主题相关的部分。</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011105425467.png" alt="主题部分"></p>
-<h3 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h3><p>在<code>_config.yml</code>文件中有一个轮换图是否开启，我把他设置为了false<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011110208423.png" alt="每日轮换"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011105425467.png"></p>
+<h3 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h3><p>在<code>_config.yml</code>文件中有一个轮换图是否开启，我把他设置为了false<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011110208423.png"></p>
 <p>然后在layout文件夹中的_partial中的bg-cover-content.ejs文件中可以设置轮换的图片，原来我想设置为两边有箭头可以手动轮换的，但是不知道怎么做，于是就把上面设置为false然后把图中的图片换为自己的了。</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011111006408.png" alt="轮播图"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011111006408.png"></p>
 <p>其实还可以设置背景图，原来背景是没有的只是纯色，上面更换的只是轮播图。</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011111407726.png" alt="背景"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011111407726.png"></p>
 <p>找到themes下的source中的css文件夹中的matery，在里面可以修改整个主题的样式，ctrl+f5搜索body可以定位到body样式，把他修改为如下（这里我也是在网上找的）</p>
 <pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">&#123;</span>
     <span class="token comment">/* background-color: #eaeaea;
@@ -455,10 +455,10 @@
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="图标链接"><a href="#图标链接" class="headerlink" title="图标链接"></a>图标链接</h3><p>在右上角中有一个GitHub的图标，我觉得不好看就把他去掉了。同样在_partial文件中的header.ejs中把下面注释掉</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011112413518.png" alt="右上角图标"></p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011112338263.png" alt="修改后"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011112413518.png"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011112338263.png"></p>
 <p>在轮播图中也有很多链接，你可以在主题中的_config.yml文件中修改</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011112658327.png" alt="链接"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011112658327.png"></p>
 <h3 id="滚动条"><a href="#滚动条" class="headerlink" title="滚动条"></a>滚动条</h3><p>原来我也没怎么注意，有个舍友说滚动条太丑了，于是就在网上找了修改方法。在matery.css文件中加上下面的代码就可以修改滚动条</p>
 <pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token comment">/* 滚动条颜色 */</span>
 <span class="token selector">::-webkit-scrollbar-thumb</span> <span class="token punctuation">&#123;</span>
@@ -477,10 +477,10 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="底部"><a href="#底部" class="headerlink" title="底部"></a>底部</h3><p>在_partial文件夹中footer.ejs可以修改底部，我把hexo和主题链接去掉了<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011130229482.png" alt="底部"></p>
-<p>统计访问人数在themes文件夹下面的_config.yml可以修改<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011150735395.png" alt="统计"></p>
-<h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p>在手机上的样式会有一点不一样，手机上的菜单变为侧边了，多了一个GitHub链接<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221012195757421.png" alt="移动端"></p>
-<p>这个是在_partial下的mobile-nav.ejs里面进行修改的，我不想要就把他注释掉了<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221012200053250.png" alt="移动端"></p>
+<h3 id="底部"><a href="#底部" class="headerlink" title="底部"></a>底部</h3><p>在_partial文件夹中footer.ejs可以修改底部，我把hexo和主题链接去掉了<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011130229482.png"></p>
+<p>统计访问人数在themes文件夹下面的_config.yml可以修改<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011150735395.png"></p>
+<h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p>在手机上的样式会有一点不一样，手机上的菜单变为侧边了，多了一个GitHub链接<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221012195757421.png"></p>
+<p>这个是在_partial下的mobile-nav.ejs里面进行修改的，我不想要就把他注释掉了<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221012200053250.png"></p>
 <h2 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h2><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>原来的搜索功能是不能用的，要下载插件才能使用，打开终端执行如下命令：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-search<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -489,7 +489,7 @@
   path: search.xml
   field: post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="文章字数统计"><a href="#文章字数统计" class="headerlink" title="文章字数统计"></a>文章字数统计</h3><p>发布文章可以看到时间和字数等<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011152314143.png" alt="文章字数统计"></p>
+<h3 id="文章字数统计"><a href="#文章字数统计" class="headerlink" title="文章字数统计"></a>文章字数统计</h3><p>发布文章可以看到时间和字数等<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011152314143.png"></p>
 <p>在终端中输入如下命令：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-wordcount<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -525,7 +525,7 @@
   <span class="token key atrule">content_limit_delim</span><span class="token punctuation">:</span> <span class="token string">' '</span>
   <span class="token key atrule">order_by</span><span class="token punctuation">:</span> <span class="token punctuation">-</span>date<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h3><p>原来是只有首页可以使用，头部中的其他页面是要自己创建的（实现代码别人已经写好，只要一两句简单代码就可）<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011154509445.png" alt="页面"></p>
+<h3 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h3><p>原来是只有首页可以使用，头部中的其他页面是要自己创建的（实现代码别人已经写好，只要一两句简单代码就可）<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011154509445.png"></p>
 <p>新建标签页:在终端中执行如下命令:</p>
 <pre class="line-numbers language-none"><code class="language-none">hexo new page &quot;tags&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -538,12 +538,12 @@
 <span class="token punctuation">---</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>其他页面的新建也是如此，分类categories、关于about、留言板contact、友情链接friends、还要有一个404页面</p>
-<h3 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h3><p>在创建了contact页面后还不能使用留言功能，刚开始我是想用gittalk的，但是弄了没有成功。后面换为了valine，这个还是挺好弄的，在网上找教程跟着弄就好。在此过程中遇到了一些问题，首先可以在layout文件夹下面的contact.ejs文件中可以修改属性<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011192054369.png" alt="留言板"></p>
-<p>按照网上教程弄好之后发现留言功能在文章可以出现，友情链接也可以出现，但就是在留言板页面中没有<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011192351739.png" alt="留言板"></p>
-<p>找到layout文件夹下的contact文件ctrl+f5查找card找到图中的地方添加红色部分的代码，这样在留言板中就可以看到留言功能。<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011192735039.png" alt="留言板"></p>
-<p>下面来说一下QQ头像获取功能，首先在主题下的_config.yml文件中找到下面的代码，添加最后一行<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/tempsnip.png" alt="获取头像"></p>
-<p>然后在主题下的source的libs中找到valine.min.js搜索vimg可以找到下面的代码(先格式化一下代码)<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011194531510.png" alt="vimg"></p>
-<p>然后往上几行可以看到如下代码：<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011194906545.png" alt="上几行"></p>
+<h3 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h3><p>在创建了contact页面后还不能使用留言功能，刚开始我是想用gittalk的，但是弄了没有成功。后面换为了valine，这个还是挺好弄的，在网上找教程跟着弄就好。在此过程中遇到了一些问题，首先可以在layout文件夹下面的contact.ejs文件中可以修改属性<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011192054369.png"></p>
+<p>按照网上教程弄好之后发现留言功能在文章可以出现，友情链接也可以出现，但就是在留言板页面中没有<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011192351739.png"></p>
+<p>找到layout文件夹下的contact文件ctrl+f5查找card找到图中的地方添加红色部分的代码，这样在留言板中就可以看到留言功能。<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011192735039.png"></p>
+<p>下面来说一下QQ头像获取功能，首先在主题下的_config.yml文件中找到下面的代码，添加最后一行<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/tempsnip.png"></p>
+<p>然后在主题下的source的libs中找到valine.min.js搜索vimg可以找到下面的代码(先格式化一下代码)<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011194531510.png"></p>
+<p>然后往上几行可以看到如下代码：<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011194906545.png"></p>
 <p>在他t.get(‘link’)上一行新增如下代码：</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> qq_img <span class="token operator">=</span> <span class="token constant">B</span><span class="token punctuation">.</span>cdn <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> u<span class="token punctuation">.</span>default<span class="token punctuation">)</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'mail'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token constant">B</span><span class="token punctuation">.</span>params
               <span class="token keyword">if</span> <span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'mail'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'@qq.com'</span><span class="token punctuation">)</span> <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
@@ -557,11 +557,11 @@
 
 <center>**注意复制上面代码时要查看前面的字母是否和原来的相同**</center>
 
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011195555462.png" alt="注意字母"></p>
-<p>把原来的<code>B.cdn + (0, u.default)(t.get(&#39;mail&#39;)) + B.params</code>更换为qq_img<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011195934622.png" alt="qq_img"></p>
-<p>填写qq邮箱之后可以看到评论中显示qq头像<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011200831806.png" alt="头像"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011195555462.png"></p>
+<p>把原来的<code>B.cdn + (0, u.default)(t.get(&#39;mail&#39;)) + B.params</code>更换为qq_img<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011195934622.png"></p>
+<p>填写qq邮箱之后可以看到评论中显示qq头像<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011200831806.png"></p>
 <p>在_partial下的valine.ejs找到如下的代码进行修改，requiredFields是必填项，meta是叫你填的信息。详细内容可以到官网去看<a target="_blank" rel="noopener" href="https://valine.js.org/configuration.html#meta">valine</a></p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011201015359.png" alt="修改"></p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221011201015359.png"></p>
 <h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><p>新建文章的命令是<code>hexo new &quot;标题&quot;</code>，然后可以在根目录source下的_posts看到新建的文章，可以用typora打开这个文章进行编写。可以为文章添加tags和分类，想一个文章分在不同的分类可以设置，按照如下格式。</p>
 <pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
 
@@ -573,6 +573,128 @@
 <span class="token key atrule">categories</span><span class="token punctuation">:</span> 
 <span class="token punctuation">-</span> <span class="token punctuation">[</span>随笔<span class="token punctuation">]</span></span>
 <span class="token punctuation">---</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="时钟"><a href="#时钟" class="headerlink" title="时钟"></a>时钟</h3><p>在网上看到一个小案例觉得蛮有趣的，就拿来挂在上面了。（一下代码都是照网上修改得来）</p>
+<p>首先找到_partial下的index-cover.ejs文件，在所示添加HTML代码<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221016164801924.png"></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!-- 时钟  --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>clock-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>time<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">--clr</span><span class="token punctuation">:</span> #ff2972</span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>
+            <span class="token comment">&lt;!-- 圆点 --></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dots h_dot<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token comment">&lt;!-- 可缩放矢量图 成为dom的一部分 --></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hh<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hours<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>00<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">--clr</span><span class="token punctuation">:</span> #fee880</span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dots m_dot<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>minutes<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>00<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>circle<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">--clr</span><span class="token punctuation">:</span> #29ff86</span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dots s_dot<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>circle</span> <span class="token attr-name">cx</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">cy</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>55<span class="token punctuation">"</span></span> <span class="token attr-name">r</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ss<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>circle</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>seconds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>00<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token comment">&lt;!-- 时钟结束 --></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在<code>$(function () &#123;&#125;)</code>的后面添加js代码<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20221016163726875.png"></p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 时钟</span>
+    <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">let</span> hours <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'hours'</span><span class="token punctuation">)</span>
+        <span class="token keyword">let</span> minutes <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'minutes'</span><span class="token punctuation">)</span>
+        <span class="token keyword">let</span> seconds <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'seconds'</span><span class="token punctuation">)</span>
+        <span class="token keyword">let</span> h <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getHours</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">let</span> m <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMinutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">let</span> s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSeconds</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">// 小于10前面+0</span>
+        h <span class="token operator">=</span> h <span class="token operator">&lt;</span> <span class="token number">10</span> <span class="token operator">?</span> <span class="token string">'0'</span> <span class="token operator">+</span> h <span class="token operator">:</span> h
+        m <span class="token operator">=</span> m <span class="token operator">&lt;</span> <span class="token number">10</span> <span class="token operator">?</span> <span class="token string">'0'</span> <span class="token operator">+</span> m <span class="token operator">:</span> m
+        s <span class="token operator">=</span> s <span class="token operator">&lt;</span> <span class="token number">10</span> <span class="token operator">?</span> <span class="token string">'0'</span> <span class="token operator">+</span> s <span class="token operator">:</span> s
+
+        hours<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> h<span class="token operator">+</span><span class="token string">"&lt;br>&lt;span>Hours&lt;/sapn>"</span>
+        minutes<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> m<span class="token operator">+</span><span class="token string">"&lt;br>&lt;span>Minutes&lt;/sapn>"</span>
+        seconds<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> s<span class="token operator">+</span><span class="token string">"&lt;br>&lt;span>Seconds&lt;/sapn>"</span>
+
+        <span class="token keyword">let</span> hh<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'hh'</span><span class="token punctuation">)</span>
+        <span class="token keyword">let</span> mm<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'mm'</span><span class="token punctuation">)</span>
+        <span class="token keyword">let</span> ss<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ss'</span><span class="token punctuation">)</span>
+        <span class="token comment">// 这里的315要和css中的315相同</span>
+        hh<span class="token punctuation">.</span>style<span class="token punctuation">.</span>strokeDashoffset<span class="token operator">=</span><span class="token number">315</span><span class="token operator">-</span><span class="token punctuation">(</span><span class="token number">315</span><span class="token operator">*</span>h<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">24</span>
+        mm<span class="token punctuation">.</span>style<span class="token punctuation">.</span>strokeDashoffset<span class="token operator">=</span><span class="token number">315</span><span class="token operator">-</span><span class="token punctuation">(</span><span class="token number">315</span><span class="token operator">*</span>m<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">60</span>
+        ss<span class="token punctuation">.</span>style<span class="token punctuation">.</span>strokeDashoffset<span class="token operator">=</span><span class="token number">315</span><span class="token operator">-</span><span class="token punctuation">(</span><span class="token number">315</span><span class="token operator">*</span>s<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">60</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>然后在最后添加css样式</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">&lt;!-- 时钟 -->
+&lt;style>
+    .clock-container</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token comment">/* justify-content: center;
+    align-items: center; */</span>
+    <span class="token comment">/* background-color: transparent; */</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">#time</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token comment">/* gap: 40px; */</span>
+    <span class="token property">z-index</span><span class="token punctuation">:</span> 9<span class="token punctuation">;</span>
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> 70px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">#time .circle</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 120px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 120px<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">justify-self</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">#time .circle svg</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>270deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">#time .circle svg circle</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">fill</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+    <span class="token property">stroke</span><span class="token punctuation">:</span> #474747<span class="token punctuation">;</span>
+    <span class="token property">stroke-width</span><span class="token punctuation">:</span> 3<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>5px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">#time .circle svg circle:nth-child(2)</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">stroke</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--clr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">stroke-dasharray</span><span class="token punctuation">:</span> 315<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">#time div</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.5rem<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">#time div span</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 0.5rem<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 300<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">#time #hours,#time #minutes,#time #seconds</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 47px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+&lt;/style><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>参考文章：<a target="_blank" rel="noopener" href="https://www.matemaster.cn/posts/43043.html#toc-heading-1">https://www.matemaster.cn/posts/43043.html#toc-heading-1</a></p>
 
@@ -1197,7 +1319,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4.7k</span>
+                        class="white-color">5.3k</span>
             
             
             
