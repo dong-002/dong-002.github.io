@@ -6,7 +6,7 @@
   <link href="http://dong-002.github.io/atom.xml" rel="self"/>
   
   <link href="http://dong-002.github.io/"/>
-  <updated>2022-10-16T08:50:37.039Z</updated>
+  <updated>2022-11-01T13:06:32.016Z</updated>
   <id>http://dong-002.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue3中遇到的问题</title>
+    <link href="http://dong-002.github.io/2022/10/31/vue3-zhong-yu-dao-de-wen-ti/"/>
+    <id>http://dong-002.github.io/2022/10/31/vue3-zhong-yu-dao-de-wen-ti/</id>
+    <published>2022-10-31T08:29:35.000Z</published>
+    <updated>2022-11-01T13:06:32.016Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;父组件和子组件的传递&quot;&gt;&lt;a href=&quot;#父组件和子组件的传递&quot; class=&quot;headerlink&quot; title=&quot;父组件和子组件的传递&quot;&gt;&lt;/a&gt;父组件和子组件的传递&lt;/h3&gt;&lt;h4 id=&quot;父向子传值&quot;&gt;&lt;a href=&quot;#父向子传值&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>主题修改</title>
@@ -75,7 +100,7 @@
     <link href="http://dong-002.github.io/2022/10/06/vue-cli-chuang-jian-xiang-mu/"/>
     <id>http://dong-002.github.io/2022/10/06/vue-cli-chuang-jian-xiang-mu/</id>
     <published>2022-10-06T14:21:53.000Z</published>
-    <updated>2022-10-16T08:51:59.646Z</updated>
+    <updated>2022-11-03T14:42:45.358Z</updated>
     
     
       

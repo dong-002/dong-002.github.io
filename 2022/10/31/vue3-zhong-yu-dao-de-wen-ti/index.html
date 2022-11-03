@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="webpack介绍, Dong&#39;s Blog">
-    <meta name="description" content="webpack是一个可以将项目进行规范化、将项目打包压缩的工具
-初始化终端使用npm init -y在项目中建立package.json来记录项目，使用npm i webpack webpack-cli -D将webpack包放到devDe">
+    <meta name="keywords" content="vue3中遇到的问题, Dong&#39;s Blog">
+    <meta name="description" content="父组件和子组件的传递父向子传值这里是想点击父组件中的按钮让子组件显示出来，原来子组件是不显示的。
+
+&amp;#x2F;&amp;#x2F;父组件
+&amp;lt;template&amp;gt;
+	&amp;lt;button @click&amp;#x3D;&amp;quot;comeOn&amp;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>webpack介绍 | Dong&#39;s Blog</title>
+    <title>vue3中遇到的问题 | Dong&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -334,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">webpack介绍</h1>
+                    <h1 class="description center-align post-title">vue3中遇到的问题</h1>
                 </div>
             </div>
         </div>
@@ -363,8 +366,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/webpack/">
-                                <span class="chip bg-color">webpack</span>
+                            <a href="/tags/vue/">
+                                <span class="chip bg-color">vue</span>
                             </a>
                         
                     </div>
@@ -375,8 +378,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/categories/vue/" class="post-category">
+                                vue
                             </a>
                         
                     </div>
@@ -388,21 +391,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-10-06
+                    2022-10-31
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-10-16
+                    2022-11-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    842
                 </div>
                 
 
@@ -427,92 +430,138 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>webpack是一个可以将项目进行规范化、将项目打包压缩的工具</p>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>终端使用<code>npm init -y</code>在项目中建立package.json来记录项目，使用<code>npm i webpack webpack-cli -D</code>将webpack包放到devDependencies中，在项目根目录下建立一个webpack.config.js的文件</p>
-<p>里面有两个参数可选，development在开发的时候用打包速度快 production在发布的时候使用 可以进行压缩 体积小</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220810001403153.png"></p>
-<p>然后再package.json中找到scripts节点，添加如下属性</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220810001609715.png"></p>
-<p>在终端中运行<code>npm run dev</code>命令，这样项目就自动打包，将src中的index.js的文件打包放到dist中的main.js中。可以在webpack.config.js文件中配置要打包的文件和放到哪里。</p>
-<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><h4 id="webpack-dev-server"><a href="#webpack-dev-server" class="headerlink" title="webpack-dev-server"></a>webpack-dev-server</h4><p>每次修改代码都要重新执行<code>npm run dev</code>这样很麻烦，可以安装插件当代码改变是自动执行，<code>npm i webpack-dev-server -D</code>下载插件然后再package.json中dev加多一个如下配置，但是要在<a target="_blank" rel="noopener" href="http://localhost:8080/%E4%B8%AD%E6%89%93%E5%BC%80%E3%80%82**%E5%B9%B6%E4%B8%94HTML%E4%B8%AD%E5%BC%95%E5%85%A5%E7%9A%84%E8%BF%9E%E6%8E%A5%E6%94%B9%E4%B8%BA/index.js**%EF%BC%8C%E8%BF%99%E6%98%AF%E5%9B%A0%E4%B8%BA%E6%96%B0%E7%94%9F%E6%88%90%E7%9A%84index.js%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%EF%BC%8C%E4%B8%8D%E5%9C%A8%E7%A3%81%E7%9B%98%E4%B8%8A%E3%80%82">http://localhost:8080/中打开。**并且HTML中引入的连接改为/index.js**，这是因为新生成的index.js在内存中，不在磁盘上。</a></p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220810164843354.png"></p>
-<h4 id="html-webpack-plugin"><a href="#html-webpack-plugin" class="headerlink" title="html-webpack-plugin"></a>html-webpack-plugin</h4><p>打开网址还要点到index.html文件中才能看到页面，通过<code>npm i html-webpack-plugin</code>安装插件，然后在webpack.config.js文件中配置</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 导入构造函数</span>
-<span class="token keyword">const</span> HtmlPlugin<span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'html-webpack-plugin'</span><span class="token punctuation">)</span>
-<span class="token comment">// 创建实例对象</span>
-<span class="token keyword">const</span> htmlPlugin<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">HtmlPlugin</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
-    <span class="token literal-property property">template</span><span class="token operator">:</span> <span class="token string">'./src/index.html'</span><span class="token punctuation">,</span> <span class="token comment">//指定文件</span>
-    <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'./index.html'</span> <span class="token comment">//生成的文件</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+                <h3 id="父组件和子组件的传递"><a href="#父组件和子组件的传递" class="headerlink" title="父组件和子组件的传递"></a>父组件和子组件的传递</h3><h4 id="父向子传值"><a href="#父向子传值" class="headerlink" title="父向子传值"></a>父向子传值</h4><p>这里是想点击父组件中的按钮让子组件显示出来，原来子组件是不显示的。</p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/%E7%A9%BA%E7%99%BD.png"></p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&#x2F;&#x2F;父组件
+&lt;template&gt;
+	&lt;button @click&#x3D;&quot;comeOn&quot;&gt;确定&lt;&#x2F;button&gt;
+    &lt;div&gt;
+        &lt;!-- 传入的参数 子组件是否显示--&gt;
+        &lt;Son :show&#x3D;&#39;son.show&#39; &gt;&lt;&#x2F;Son&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;template&gt;
+&lt;script setup&gt;
+	import &#123;reactive&#125; from &#39;vue&#39;
+    &#x2F;&#x2F;这里要用reactive 
+	const son&#x3D;reactive(&#123;
+		show: false
+	&#125;)
+    const comeOn&#x3D;()&#x3D;&gt;&#123;
+        son.show&#x3D;true
+    &#125;
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&#x2F;&#x2F;子组件
+&lt;template&gt;
+	&lt;div&gt;
+        
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;template&gt;
+&lt;script setup&gt;
+    &#x2F;&#x2F;这里设置属性 父组件使用时要传入的参数
+	const props&#x3D;defineProps(&#123;
+        show: &#123;
+            type: Boolean,
+            default: false
+        &#125;
+    &#125;)
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-module<span class="token punctuation">.</span>exports<span class="token operator">=</span><span class="token punctuation">&#123;</span>
-    <span class="token comment">// development是开发  production是上线后 两个参数可以选择</span>
-    <span class="token comment">//development在开发的时候用打包速度快 production在发布的时候使用 可以进行压缩 体积小</span>
-    <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">'development'</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>htmlPlugin<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//使htmlPlugin生效</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="子向父传递方法"><a href="#子向父传递方法" class="headerlink" title="子向父传递方法"></a>子向父传递方法</h4><p>子组件是一个弹窗，有一个关闭按钮，当点击关闭按钮时就把弹窗关掉</p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/%E7%A9%BA%E7%99%BD.png"></p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&#x2F;&#x2F;父组件
+&lt;template&gt;
+	&lt;button @click&#x3D;&quot;comeOn&quot;&gt;确定&lt;&#x2F;button&gt;
+    &lt;div&gt;
+        &lt;!-- 传入的参数 子组件是否显示--&gt;
+        &lt;Son :show&#x3D;&#39;son.show&#39; @closeDialog&#x3D;&#39;close&#39;&gt;&lt;&#x2F;Son&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;template&gt;
+&lt;script setup&gt;
+	import &#123;reactive&#125; from &#39;vue&#39;
+	const son&#x3D;reactive(&#123;
+		show: false
+	&#125;)
+    const comeOn&#x3D;()&#x3D;&gt;&#123;
+        son.show&#x3D;true
+    &#125;
+    const close&#x3D;()&#x3D;&gt;&#123;
+        son.show&#x3D;false
+    &#125;
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>这样<code>npm run dev</code>然后打开<a target="_blank" rel="noopener" href="http://localhost:8080/%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E9%A1%B5%E9%9D%A2%E3%80%82">http://localhost:8080/就可以看到页面。</a></p>
-<p>在module.exports中配置一个如下节点可以自动打开浏览器</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-    <span class="token comment">// 运行npm run dev自动打开浏览器</span>
-    <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    <span class="token comment">// 端口号</span>
-    <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">8080</span><span class="token punctuation">,</span>
-    <span class="token comment">// 打开浏览器时用什么域名或IP地址</span>
-    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'localhost'</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&#x2F;&#x2F;子组件
+&lt;template&gt;
+	&lt;div&gt;
+        &lt;button @click&#x3D;&quot;close&quot;&gt;&lt;&#x2F;button&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;template&gt;
+&lt;script setup&gt;
+    &#x2F;&#x2F;这里设置属性 父组件使用时要传入的参数
+	const props&#x3D;defineProps(&#123;
+        show: &#123;
+            type: Boolean,
+            default: false
+        &#125;
+    &#125;)
+    &#x2F;&#x2F;定义emit用来传递
+    const emit&#x3D;defineEmits([&#39;closeDialog&#39;])
+    const close&#x3D;()&#x3D;&gt;&#123;
+        &#x2F;&#x2F;这里将方法传递给父组件
+        emit(&#39;closeDialog&#39;) &#x2F;&#x2F;父组件中的接受方法也要是这个名字
+    &#125;
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="loader"><a href="#loader" class="headerlink" title="loader"></a>loader</h4><p>webpack只能处理js文件，其他不是js的文件不能处理，要通过loader进行打包处理。</p>
-<p>所有的css,less文件不在index.html文件中引入，在index.js文件import引入，然后通过loader和webpack处理会自动引入到index.html文件中。<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220810214101643.png"></p>
-<p>打包css文件：<code>npm i style-loader css-loader -D</code>下载插件，然后在webpack.config.js文件中加多一个节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-            <span class="token comment">// 以.css后缀结尾的文件  使用的loader 顺序不能改变</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">]</span>
-    <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="grandPa通过子组件让grandSon显示"><a href="#grandPa通过子组件让grandSon显示" class="headerlink" title="grandPa通过子组件让grandSon显示"></a>grandPa通过子组件让grandSon显示</h4><p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/a.png"></p>
+<p>在祖父中有一个按钮，点击这个按钮让孙子显示，但是孙子中的参数是父亲传入的，这里需要在父亲中定义一个方法然后暴露给祖父，祖父调用这个方法改变参数。defineExpose将方法或者属性暴露出去。</p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&#x2F;&#x2F;grandpa组件
+&lt;template&gt;
+	&lt;button @click&#x3D;&quot;show&quot;&gt;确定&lt;&#x2F;button&gt;
+    &lt;div&gt;
+        &lt;!-- ref可以获取这个组件 --&gt;
+        &lt;Father ref&#x3D;&#39;showRef&#39;&gt;&lt;&#x2F;Father&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;template&gt;
+&lt;script setup&gt;
+	import &#123;ref&#125; from &#39;vue&#39;
+    const showRef&#x3D;ref() &#x2F;&#x2F;需要定义一个ref
+    const show&#x3D;()&#x3D;&gt;&#123;
+        &#x2F;&#x2F;点击祖父的按钮 调用父的方法改变值
+        showRef.value.comeOn()
+    &#125;
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>打包less文件：<code>npm i less-loader less -D</code>，然后在webpack.config.js文件中加多一个节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-            <span class="token comment">// 以.css后缀结尾的文件  使用的loader</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'less-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">]</span>
-    <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&#x2F;&#x2F;father组件
+&lt;template&gt;
+	&lt;Son :show&#x3D;&quot;son.show&quot;&gt;&lt;&#x2F;Son&gt;
+&lt;&#x2F;template&gt;
+&lt;script setup&gt;
+	import &#123;reactive&#125; from &#39;vue&#39;
+	const son&#x3D;reactive(&#123;
+		show: false
+	&#125;)
+    &#x2F;&#x2F;这里定义一个方法 可以改变参数
+    const comeOn&#x3D;()&#x3D;&gt;&#123;
+        son.show&#x3D;true
+    &#125;
+    defineExpose(&#123;comeOn&#125;) &#x2F;&#x2F;结构 只是将这个方法暴露
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>打包图片：<code>npm i url-loader file-loader -D</code>，然后在webpack.config.js文件中加多一个节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-            <span class="token comment">// 以.css后缀结尾的文件  使用的loader</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'less-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-            <span class="token comment">// 图片                      表示小于等于多少字节才转换为base64格式</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.jpg|png|gif$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token string">'url-loader?limit=10000'</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">]</span>
-    <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>处理高级的ES6语法：<code>npm i babel-loader @babel/core @babel/plugin-proposal-decorators -D</code>，添加节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 将ES6高级语法处理 除掉第三方包不用管</span>
-<span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token string">'babel-loader'</span><span class="token punctuation">,</span><span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>在根目录下新建babel.config.js文件，配置如下：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports<span class="token operator">=</span><span class="token punctuation">&#123;</span>
-    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'@babel/plugin-proposal-decorators'</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token literal-property property">legacy</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">&#125;</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>&#x3D;&#x3D;其实在开发中很少自己配置webpack，一般用插件一键生成的，重点在于理解&#x3D;&#x3D;</p>
-<h4 id="进行发布"><a href="#进行发布" class="headerlink" title="进行发布"></a>进行发布</h4><p>项目完成后要将项目进行发布，在package.json中配置如下，–mode production指的是将代码压缩，然后执行<code>npm run build</code>，在根目录下出现一个dist文件夹里面是进行压缩的文件。<code>npm run dev</code>是在开发阶段使用，添加<strong>serve</strong>打包的代码会存储在内存中，build属性中没有serve，执行<code>npm run bulid</code>会在磁盘上生成dist文件夹。</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220811002432483.png"></p>
-<h4 id="source-map"><a href="#source-map" class="headerlink" title="source-map"></a>source-map</h4><p>在调试时显示出错的行号和源码行号对应不上，因此在webpack.config.js文件中配置节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 在开发阶段可以查看出错的行号</span>
-<span class="token literal-property property">devtool</span><span class="token operator">:</span> <span class="token string">'eval-source-map'</span><span class="token punctuation">,</span>
-
-<span class="token comment">//在发布时上面的做法会显示源码 改为下面的</span>
-<span class="token literal-property property">devtool</span><span class="token operator">:</span> <span class="token string">'nosources-source-map'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&#x2F;&#x2F;son组件
+&lt;template&gt;
+	&lt;div&gt;
+        son组件
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;template&gt;
+&lt;script setup&gt;
+    &#x2F;&#x2F;这里设置属性 父组件使用时要传入的参数
+	const props&#x3D;defineProps(&#123;
+        show: &#123;
+            type: Boolean,
+            default: false
+        &#125;
+    &#125;)
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -539,7 +588,7 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://dong-002.github.io/2022/10/06/webpack-jie-shao/">http://dong-002.github.io/2022/10/06/webpack-jie-shao/</a>
+                    <a href="http://dong-002.github.io/2022/10/31/vue3-zhong-yu-dao-de-wen-ti/">http://dong-002.github.io/2022/10/31/vue3-zhong-yu-dao-de-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -577,8 +626,8 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/webpack/">
-                                    <span class="chip bg-color">webpack</span>
+                                <a href="/tags/vue/">
+                                    <span class="chip bg-color">vue</span>
                                 </a>
                             
                         </div>
@@ -894,9 +943,60 @@ module<span class="token punctuation">.</span>exports<span class="token operator
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/10/31/vue3-zhong-yu-dao-de-wen-ti/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="vue3中遇到的问题">
+                        
+                        <span class="card-title">vue3中遇到的问题</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/vue/" class="post-category">
+                                    vue
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/vue/">
+                        <span class="chip bg-color">vue</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/10/11/zhu-ti-xiu-gai/">
                     <div class="card-image">
@@ -914,9 +1014,9 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -938,55 +1038,6 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                     
                     <a href="/tags/hexo/">
                         <span class="chip bg-color">hexo</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/10/06/vue-cli-chuang-jian-xiang-mu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="vue-cli创建项目">
-                        
-                        <span class="card-title">vue-cli创建项目</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-06
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/vue/">
-                        <span class="chip bg-color">vue</span>
                     </a>
                     
                 </div>
