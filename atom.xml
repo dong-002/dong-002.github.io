@@ -6,7 +6,7 @@
   <link href="http://dong-002.github.io/atom.xml" rel="self"/>
   
   <link href="http://dong-002.github.io/"/>
-  <updated>2022-11-19T16:20:17.326Z</updated>
+  <updated>2023-03-20T15:19:26.771Z</updated>
   <id>http://dong-002.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>异步</title>
+    <link href="http://dong-002.github.io/2023/03/20/yi-bu-bian-cheng/"/>
+    <id>http://dong-002.github.io/2023/03/20/yi-bu-bian-cheng/</id>
+    <published>2023-03-20T15:17:26.000Z</published>
+    <updated>2023-03-20T15:19:26.771Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;异步编程&quot;&gt;&lt;a href=&quot;#异步编程&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://dong-002.github.io/categories/JavaScript/"/>
+    
+    
+    <category term="异步编程" scheme="http://dong-002.github.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>this指向和闭包</title>
+    <link href="http://dong-002.github.io/2023/03/20/this-zhi-xiang-he-bi-bao/"/>
+    <id>http://dong-002.github.io/2023/03/20/this-zhi-xiang-he-bi-bao/</id>
+    <published>2023-03-20T15:14:33.000Z</published>
+    <updated>2023-03-20T15:16:31.525Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;center&gt;&lt;font size=6&gt;js学习&lt;/font&gt;&lt;/center&gt;
+
+&lt;h3 id=&quot;this指向&quot;&gt;&lt;a href=&quot;#this指向&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://dong-002.github.io/categories/JavaScript/"/>
+    
+    
+    <category term="闭包" scheme="http://dong-002.github.io/tags/%E9%97%AD%E5%8C%85/"/>
+    
+    <category term="this指向" scheme="http://dong-002.github.io/tags/this%E6%8C%87%E5%90%91/"/>
+    
+  </entry>
   
   <entry>
     <title>项目部署</title>

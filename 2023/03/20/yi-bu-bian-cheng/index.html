@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="webpack介绍, Dong&#39;s Blog">
-    <meta name="description" content="webpack是一个可以将项目进行规范化、将项目打包压缩的工具
-初始化终端使用npm init -y在项目中建立package.json来记录项目，使用npm i webpack webpack-cli -D将webpack包放到devDe">
+    <meta name="keywords" content="异步, Dong&#39;s Blog">
+    <meta name="description" content="异步编程同步行为就是代码按照顺序执行，JavaScript是单线程的，如果某个操作需要的时间很长，那么可以通过异步操作先执行另一个操作，后面才回来执行这个操作。
+回调函数解决我们可以通过回调函数解决异步编程问题，回调函数指的是一个函数作为参">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>webpack介绍 | Dong&#39;s Blog</title>
+    <title>异步 | Dong&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -334,12 +334,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">webpack介绍</h1>
+                    <h1 class="description center-align post-title">异步</h1>
                 </div>
             </div>
         </div>
@@ -363,8 +363,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/webpack/">
-                                <span class="chip bg-color">webpack</span>
+                            <a href="/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/">
+                                <span class="chip bg-color">异步编程</span>
                             </a>
                         
                     </div>
@@ -375,8 +375,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/categories/JavaScript/" class="post-category">
+                                JavaScript
                             </a>
                         
                     </div>
@@ -388,21 +388,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-10-06
+                    2023-03-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-10-16
+                    2023-03-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    692
                 </div>
                 
 
@@ -427,92 +427,114 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>webpack是一个可以将项目进行规范化、将项目打包压缩的工具</p>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>终端使用<code>npm init -y</code>在项目中建立package.json来记录项目，使用<code>npm i webpack webpack-cli -D</code>将webpack包放到devDependencies中，在项目根目录下建立一个webpack.config.js的文件</p>
-<p>里面有两个参数可选，development在开发的时候用打包速度快 production在发布的时候使用 可以进行压缩 体积小</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220810001403153.png"></p>
-<p>然后再package.json中找到scripts节点，添加如下属性</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220810001609715.png"></p>
-<p>在终端中运行<code>npm run dev</code>命令，这样项目就自动打包，将src中的index.js的文件打包放到dist中的main.js中。可以在webpack.config.js文件中配置要打包的文件和放到哪里。</p>
-<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><h4 id="webpack-dev-server"><a href="#webpack-dev-server" class="headerlink" title="webpack-dev-server"></a>webpack-dev-server</h4><p>每次修改代码都要重新执行<code>npm run dev</code>这样很麻烦，可以安装插件当代码改变是自动执行，<code>npm i webpack-dev-server -D</code>下载插件然后再package.json中dev加多一个如下配置，但是要在<a target="_blank" rel="noopener" href="http://localhost:8080/%E4%B8%AD%E6%89%93%E5%BC%80%E3%80%82**%E5%B9%B6%E4%B8%94HTML%E4%B8%AD%E5%BC%95%E5%85%A5%E7%9A%84%E8%BF%9E%E6%8E%A5%E6%94%B9%E4%B8%BA/index.js**%EF%BC%8C%E8%BF%99%E6%98%AF%E5%9B%A0%E4%B8%BA%E6%96%B0%E7%94%9F%E6%88%90%E7%9A%84index.js%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%EF%BC%8C%E4%B8%8D%E5%9C%A8%E7%A3%81%E7%9B%98%E4%B8%8A%E3%80%82">http://localhost:8080/中打开。**并且HTML中引入的连接改为/index.js**，这是因为新生成的index.js在内存中，不在磁盘上。</a></p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220810164843354.png"></p>
-<h4 id="html-webpack-plugin"><a href="#html-webpack-plugin" class="headerlink" title="html-webpack-plugin"></a>html-webpack-plugin</h4><p>打开网址还要点到index.html文件中才能看到页面，通过<code>npm i html-webpack-plugin</code>安装插件，然后在webpack.config.js文件中配置</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 导入构造函数</span>
-<span class="token keyword">const</span> HtmlPlugin<span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'html-webpack-plugin'</span><span class="token punctuation">)</span>
-<span class="token comment">// 创建实例对象</span>
-<span class="token keyword">const</span> htmlPlugin<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">HtmlPlugin</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
-    <span class="token literal-property property">template</span><span class="token operator">:</span> <span class="token string">'./src/index.html'</span><span class="token punctuation">,</span> <span class="token comment">//指定文件</span>
-    <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'./index.html'</span> <span class="token comment">//生成的文件</span>
+                <h3 id="异步编程"><a href="#异步编程" class="headerlink" title="异步编程"></a>异步编程</h3><p>同步行为就是代码按照顺序执行，JavaScript是单线程的，如果某个操作需要的时间很长，那么可以通过异步操作先执行另一个操作，后面才回来执行这个操作。</p>
+<h3 id="回调函数解决"><a href="#回调函数解决" class="headerlink" title="回调函数解决"></a>回调函数解决</h3><p>我们可以通过回调函数解决异步编程问题，<strong>回调函数指的是一个函数作为参数传递给另一个函数，当需要时另一个函数才调用它</strong>。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// 先干自己的事 等到需要回调函数再调用</span>
+    <span class="token keyword">const</span> sum <span class="token operator">=</span> x <span class="token operator">+</span> y
+    <span class="token comment">// 现在调用回调函数</span>
+    <span class="token function">callback</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">function</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+<span class="token function">a</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> print<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h3><p>回调函数会出现回调地狱的问题，即回调中嵌套多层回调。promise可以解决回调地狱的问题，以更加清晰的逻辑写好异步编程。promise有3个状态，pending,resolved,rejected.</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//基本模型</span>
+<span class="token keyword">const</span> p<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span>reject</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+p<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+    
+<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token parameter">error</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+
 <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
 
+<span class="token keyword">const</span> p<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span>reject</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//这里处理正确的事情</span>
+    <span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token punctuation">&#123;</span>
+      <span class="token function">reject</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//这里处理错误的</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token comment">// 具体怎么处理</span>
+p<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token parameter">error</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-module<span class="token punctuation">.</span>exports<span class="token operator">=</span><span class="token punctuation">&#123;</span>
-    <span class="token comment">// development是开发  production是上线后 两个参数可以选择</span>
-    <span class="token comment">//development在开发的时候用打包速度快 production在发布的时候使用 可以进行压缩 体积小</span>
-    <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">'development'</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>htmlPlugin<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//使htmlPlugin生效</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="async和await"><a href="#async和await" class="headerlink" title="async和await"></a>async和await</h3><p>async和await对promise进一步简化，可以用同步的方式写异步代码。</p>
+<p>使用了asnyc之后标明这是一个异步函数，异步函数使用return返回值会被promise.resolve()包装成一个promise对象。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//async放在函数前面 函数返回的是一个promise对象 简化对promise对象的创建</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"简化promise写法"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">22</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">const</span> a<span class="token operator">=</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//这里返回是一个promise对象</span>
 
-<p>这样<code>npm run dev</code>然后打开<a target="_blank" rel="noopener" href="http://localhost:8080/%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E9%A1%B5%E9%9D%A2%E3%80%82">http://localhost:8080/就可以看到页面。</a></p>
-<p>在module.exports中配置一个如下节点可以自动打开浏览器</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-    <span class="token comment">// 运行npm run dev自动打开浏览器</span>
-    <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    <span class="token comment">// 端口号</span>
-    <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">8080</span><span class="token punctuation">,</span>
-    <span class="token comment">// 打开浏览器时用什么域名或IP地址</span>
-    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'localhost'</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">// async相当于下面的写法</span>
+<span class="token keyword">function</span> <span class="token function">test1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"原来写法"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">const</span> b<span class="token operator">=</span><span class="token function">test1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="loader"><a href="#loader" class="headerlink" title="loader"></a>loader</h4><p>webpack只能处理js文件，其他不是js的文件不能处理，要通过loader进行打包处理。</p>
-<p>所有的css,less文件不在index.html文件中引入，在index.js文件import引入，然后通过loader和webpack处理会自动引入到index.html文件中。<img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220810214101643.png"></p>
-<p>打包css文件：<code>npm i style-loader css-loader -D</code>下载插件，然后在webpack.config.js文件中加多一个节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-            <span class="token comment">// 以.css后缀结尾的文件  使用的loader 顺序不能改变</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">]</span>
-    <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>await会暂停异步函数中后面的代码，等到await右边的值可用再继续执行await下面的操作。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> x<span class="token operator">=</span><span class="token keyword">await</span> <span class="token number">3</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//在await的时候会暂停，退出了a，执行完下一句再返回执行console.log(x)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"在await的时候退出了函数a"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 在await的时候退出了函数a</span>
+<span class="token comment">// 3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>打包less文件：<code>npm i less-loader less -D</code>，然后在webpack.config.js文件中加多一个节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-            <span class="token comment">// 以.css后缀结尾的文件  使用的loader</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'less-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">]</span>
-    <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>打包图片：<code>npm i url-loader file-loader -D</code>，然后在webpack.config.js文件中加多一个节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-            <span class="token comment">// 以.css后缀结尾的文件  使用的loader</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'less-loader'</span><span class="token punctuation">]</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-            <span class="token comment">// 图片                      表示小于等于多少字节才转换为base64格式</span>
-            <span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.jpg|png|gif$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token string">'url-loader?limit=10000'</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">]</span>
-    <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>处理高级的ES6语法：<code>npm i babel-loader @babel/core @babel/plugin-proposal-decorators -D</code>，添加节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 将ES6高级语法处理 除掉第三方包不用管</span>
-<span class="token punctuation">&#123;</span><span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token literal-property property">use</span><span class="token operator">:</span><span class="token string">'babel-loader'</span><span class="token punctuation">,</span><span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>await关键字要和async一起使用，原来异步函数返回的是一个promise对象，但是使用了await之后可以取到promise对象中的值。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"简化promise写法"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">22</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">// await必须和async一起使用</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> result<span class="token operator">=</span><span class="token keyword">await</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"使用await"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>在根目录下新建babel.config.js文件，配置如下：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports<span class="token operator">=</span><span class="token punctuation">&#123;</span>
-    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'@babel/plugin-proposal-decorators'</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token literal-property property">legacy</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">&#125;</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>&#x3D;&#x3D;其实在开发中很少自己配置webpack，一般用插件一键生成的，重点在于理解&#x3D;&#x3D;</p>
-<h4 id="进行发布"><a href="#进行发布" class="headerlink" title="进行发布"></a>进行发布</h4><p>项目完成后要将项目进行发布，在package.json中配置如下，–mode production指的是将代码压缩，然后执行<code>npm run build</code>，在根目录下出现一个dist文件夹里面是进行压缩的文件。<code>npm run dev</code>是在开发阶段使用，添加<strong>serve</strong>打包的代码会存储在内存中，build属性中没有serve，执行<code>npm run bulid</code>会在磁盘上生成dist文件夹。</p>
-<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20220811002432483.png"></p>
-<h4 id="source-map"><a href="#source-map" class="headerlink" title="source-map"></a>source-map</h4><p>在调试时显示出错的行号和源码行号对应不上，因此在webpack.config.js文件中配置节点</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 在开发阶段可以查看出错的行号</span>
-<span class="token literal-property property">devtool</span><span class="token operator">:</span> <span class="token string">'eval-source-map'</span><span class="token punctuation">,</span>
 
-<span class="token comment">//在发布时上面的做法会显示源码 改为下面的</span>
-<span class="token literal-property property">devtool</span><span class="token operator">:</span> <span class="token string">'nosources-source-map'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20230320224404784.png" alt="image-20230320224404784"></p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"简化promise写法"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">22</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
+<span class="token comment">// await必须和async一起使用</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> result<span class="token operator">=</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"不使用await"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20230320224514595.png" alt="image-20230320224514595"></p>
 
                 
             </div>
@@ -539,7 +561,7 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://dong-002.github.io/2022/10/06/webpack-jie-shao/">http://dong-002.github.io/2022/10/06/webpack-jie-shao/</a>
+                    <a href="http://dong-002.github.io/2023/03/20/yi-bu-bian-cheng/">http://dong-002.github.io/2023/03/20/yi-bu-bian-cheng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -577,8 +599,8 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/webpack/">
-                                    <span class="chip bg-color">webpack</span>
+                                <a href="/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/">
+                                    <span class="chip bg-color">异步编程</span>
                                 </a>
                             
                         </div>
@@ -894,17 +916,18 @@ module<span class="token punctuation">.</span>exports<span class="token operator
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/10/11/zhu-ti-xiu-gai/">
+                <a href="/2023/03/20/yi-bu-bian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="主题修改">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="异步">
                         
-                        <span class="card-title">主题修改</span>
+                        <span class="card-title">异步</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -914,30 +937,27 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                    随笔
+                            <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/matery/">
-                        <span class="chip bg-color">matery</span>
-                    </a>
-                    
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/">
+                        <span class="chip bg-color">异步编程</span>
                     </a>
                     
                 </div>
@@ -951,13 +971,13 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/10/06/vue-cli-chuang-jian-xiang-mu/">
+                <a href="/2023/03/20/this-zhi-xiang-he-bi-bao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="vue-cli创建项目">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="this指向和闭包">
                         
-                        <span class="card-title">vue-cli创建项目</span>
+                        <span class="card-title">this指向和闭包</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -968,14 +988,14 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
+                            <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
                                 </a>
                             
                             
@@ -985,8 +1005,12 @@ module<span class="token punctuation">.</span>exports<span class="token operator
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vue/">
-                        <span class="chip bg-color">vue</span>
+                    <a href="/tags/%E9%97%AD%E5%8C%85/">
+                        <span class="chip bg-color">闭包</span>
+                    </a>
+                    
+                    <a href="/tags/this%E6%8C%87%E5%90%91/">
+                        <span class="chip bg-color">this指向</span>
                     </a>
                     
                 </div>
