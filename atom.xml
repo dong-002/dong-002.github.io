@@ -6,7 +6,7 @@
   <link href="http://dong-002.github.io/atom.xml" rel="self"/>
   
   <link href="http://dong-002.github.io/"/>
-  <updated>2023-03-20T15:19:26.771Z</updated>
+  <updated>2023-04-08T08:25:32.812Z</updated>
   <id>http://dong-002.github.io/</id>
   
   <author>
@@ -17,11 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://dong-002.github.io/2023/04/08/untitled/"/>
+    <id>http://dong-002.github.io/2023/04/08/untitled/</id>
+    <published>2023-04-08T08:25:32.812Z</published>
+    <updated>2023-04-08T08:25:32.812Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>组件</title>
+    <link href="http://dong-002.github.io/2023/03/31/zu-jian/"/>
+    <id>http://dong-002.github.io/2023/03/31/zu-jian/</id>
+    <published>2023-03-30T16:00:00.000Z</published>
+    <updated>2023-04-08T08:27:11.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在vue中一个.vue文件就是一个组件，一般来说不会在一个文件写太多的代码，我们可以把重复使用的代码写到一个组件中，在另一个组件中引用这个被封装的组件，这样可以提高代码复用性。前一个组件叫做子组件，后一个叫做父组件。&lt;/p&gt;
+&lt;h3 id=&quot;父组件中引用子组件&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Vue" scheme="http://dong-002.github.io/categories/Vue/"/>
+    
+    
+    <category term="组件" scheme="http://dong-002.github.io/tags/%E7%BB%84%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>异步</title>
     <link href="http://dong-002.github.io/2023/03/20/yi-bu-bian-cheng/"/>
     <id>http://dong-002.github.io/2023/03/20/yi-bu-bian-cheng/</id>
     <published>2023-03-20T15:17:26.000Z</published>
-    <updated>2023-03-20T15:19:26.771Z</updated>
+    <updated>2023-04-08T08:24:36.778Z</updated>
     
     
       
@@ -46,7 +85,7 @@
     <link href="http://dong-002.github.io/2023/03/20/this-zhi-xiang-he-bi-bao/"/>
     <id>http://dong-002.github.io/2023/03/20/this-zhi-xiang-he-bi-bao/</id>
     <published>2023-03-20T15:14:33.000Z</published>
-    <updated>2023-03-20T15:16:31.525Z</updated>
+    <updated>2023-03-27T04:21:16.346Z</updated>
     
     
       

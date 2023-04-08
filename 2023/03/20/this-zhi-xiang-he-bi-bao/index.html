@@ -8,10 +8,10 @@
     <meta name="description" content="js学习
 
 this指向在普通函数中和箭头函数中this指向会有所不同。
-在普通函数中this指的是函数的上下文，而在箭头函数中this指的是定义箭头函数的上下文。
+在普通函数中this指的是调用函数的作用域，而在箭头函数中没有自己的this，它的this指向上一级作用域的this。
 1.普通函数
-// 普通函数this指的是函数的上下文 this指的是a
-">
+谁调用指向谁
+// 这里是a调用">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -404,14 +404,14 @@ this指向在普通函数中和箭头函数中this指向会有所不同。
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-03-20
+                    2023-03-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    260
+                    366
                 </div>
                 
 
@@ -439,9 +439,10 @@ this指向在普通函数中和箭头函数中this指向会有所不同。
                 <center><font size=6>js学习</font></center>
 
 <h3 id="this指向"><a href="#this指向" class="headerlink" title="this指向"></a>this指向</h3><p>在普通函数中和箭头函数中this指向会有所不同。</p>
-<p>在普通函数中this指的是<strong>函数的上下文</strong>，而在箭头函数中this指的是<strong>定义箭头函数的上下文</strong>。</p>
+<p>在普通函数中this指的是<strong>调用函数的作用域</strong>，而在箭头函数中没有自己的this，它的this指向<strong>上一级作用域的this</strong>。</p>
 <p>1.普通函数</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 普通函数this指的是函数的上下文 this指的是a</span>
+<p>谁调用指向谁</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 这里是a调用了say函数，this指向a</span>
     <span class="token keyword">const</span> a<span class="token operator">=</span><span class="token punctuation">&#123;</span>
       <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
       <span class="token function-variable function">say</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
@@ -450,15 +451,44 @@ this指向在普通函数中和箭头函数中this指向会有所不同。
     <span class="token punctuation">&#125;</span>
     a<span class="token punctuation">.</span><span class="token function">say</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<p>独立调用指向window</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> a<span class="token operator">=</span><span class="token punctuation">&#123;</span>
+    <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">say</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//a</span>
+        <span class="token keyword">function</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//window</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//独立调用了b</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span>
+a<span class="token punctuation">.</span><span class="token function">say</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <p>2.箭头函数</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 箭头函数this指的是定义箭头函数的上下文（这里是o的上下文，this指的是window）</span>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 箭头函数this指向上一级作用域的this</span>
+<span class="token comment">// 对象没有作用域 say的上一级是对象o o没有作用域只能指向window</span>
     <span class="token keyword">const</span> o<span class="token operator">=</span><span class="token punctuation">&#123;</span>
       <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
       <span class="token function-variable function">say</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//window</span>
       <span class="token punctuation">&#125;</span>
     <span class="token punctuation">&#125;</span>
-    o<span class="token punctuation">.</span><span class="token function">say</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    o<span class="token punctuation">.</span><span class="token function">say</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//指向obj foo由obj调用 指向obj</span>
+      <span class="token function-variable function">test</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>  <span class="token comment">//指向obj 上一级作用域的this 即foo作用域中的this</span>
+      <span class="token punctuation">&#125;</span>
+      <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+      a<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      foo<span class="token operator">:</span> foo
+    <span class="token punctuation">&#125;</span>
+obj<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
 
 <h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><p>闭包指的是<strong>引用了另一个函数作用域中的变量的函数</strong>。</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">x</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
@@ -1094,7 +1124,7 @@ this指向在普通函数中和箭头函数中this指向会有所不同。
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">10.5k</span>
+                        class="white-color">12.4k</span>
             
             
             
