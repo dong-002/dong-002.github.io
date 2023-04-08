@@ -4,8 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Dong&#39;s Blog">
-    <meta name="description" content="">
+    <meta name="keywords" content="生命周期, Dong&#39;s Blog">
+    <meta name="description" content="vue生命周期就是指组件被创建到被销毁的过程
+生命周期钩子生命周期钩子会在生命周期的不同阶段被调用。
+
+beforeCreate被创建之前，此时data和methods还没有被初始化
+created创建之后，此时可以访问到data和meth">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Dong&#39;s Blog</title>
+    <title>生命周期 | Dong&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -333,12 +337,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/25.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">生命周期</h1>
                 </div>
             </div>
         </div>
@@ -360,12 +364,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+                                <span class="chip bg-color">生命周期</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/vue/" class="post-category">
+                                vue
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -374,7 +391,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-08
+                    2023-04-05
                 </div>
                 
 
@@ -388,7 +405,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    881
                 </div>
                 
 
@@ -413,7 +430,120 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>vue生命周期就是指组件被创建到被销毁的过程</p>
+<h3 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h3><p>生命周期钩子会在生命周期的不同阶段被调用。</p>
+<ol>
+<li>beforeCreate被创建之前，此时data和methods还没有被初始化</li>
+<li>created创建之后，此时可以访问到data和methods</li>
+<li>beforeMount挂载之前，此时页面还没有被渲染，访问不到dom元素</li>
+<li>mounted挂载完成，此时页面被渲染，可以访问到dom元素</li>
+<li>beforeUpdate页面更新之前，此时data数据已经是最新的，但是页面上的数据还是旧的</li>
+<li>updated页面更新后，此时data数据和页面上的数据都是最新的</li>
+<li>beforeUnmount实例销毁前，此时还可以访问到dom元素，data和methods也还存在</li>
+<li>unMounted实例销毁后，此时vue实例被销毁，所有东西不存在</li>
+</ol>
+<p>在这上面的钩子中只有beforeUpdate和updated会执行多次，当data数据改变时就会触发这两个钩子函数。</p>
+<h3 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h3><p>main.js</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> createApp <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> <span class="token string">'./style.css'</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span>
+
+<span class="token keyword">const</span> app<span class="token operator">=</span><span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+<span class="token comment">// 3秒后销毁vue实例</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+  app<span class="token punctuation">.</span><span class="token function">unmount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token number">3000</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>APP.vue</p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;
+  &lt;div id&#x3D;&quot;d&quot;&gt;
+    dom
+    &lt;button @click&#x3D;&quot;add&quot;&gt;&#123;&#123;num&#125;&#125;&lt;&#x2F;button&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;template&gt;
+
+&lt;script&gt;
+&#x2F;&#x2F; vue2写法
+export default &#123;  
+  data() &#123;
+    return &#123;
+      num: 0
+    &#125;
+  &#125;,
+  methods: &#123;
+    add: function()&#123;
+      this.num++;
+    &#125;
+  &#125;,
+  &#x2F;&#x2F; vue生命周期就是指组件被创建到被销毁的过程
+  &#x2F;&#x2F; 在实例初始化之后，这时data和methods还没有初始化
+  beforeCreate()&#123;
+    console.log(&#39;beforeCreate----创建前&#39;);
+    const d&#x3D;document.getElementById(&#39;d&#39;);
+    console.log(&#39;dom:&#39;,d);
+    console.log(&#39;num:&#39;,this.num);
+  &#125;,
+  &#x2F;&#x2F; data和methods被初始化 但是dom还没有被渲染
+  created()&#123;
+    console.log(&#39;created----创建之后&#39;);
+    const d&#x3D;document.getElementById(&#39;d&#39;);
+    console.log(&#39;dom:&#39;,d);
+    console.log(&#39;num:&#39;,this.num);
+  &#125;,
+  &#x2F;&#x2F; 页面准备挂载时候被调用,此时相关的渲染函数首次被调用
+  beforeMount()&#123;
+    console.log(&#39;beforeMount----挂载开始&#39;);
+    const d&#x3D;document.getElementById(&#39;d&#39;);
+    console.log(&#39;dom:&#39;,d);
+    console.log(&#39;num:&#39;,this.num);
+  &#125;,
+  &#x2F;&#x2F; 挂在完成，也就是模板中的HTML渲染到HTML页面中，此时可以访问到dom元素，mounted只会执行一次。
+  mounted()&#123;
+    console.log(&#39;mounted----挂载完成&#39;);
+    const d&#x3D;document.getElementById(&#39;d&#39;);
+    console.log(&#39;dom:&#39;,d);
+    console.log(&#39;num:&#39;,this.num);
+  &#125;,
+  &#x2F;&#x2F;  这时数据更新了 但是页面中还没有显示最新的数据
+  beforeUpdate()&#123;
+    console.log(&#39;beforeUpdate----更新之前被调用&#39;);
+    const d&#x3D;document.getElementById(&#39;d&#39;);
+    console.log(&#39;dom:&#39;,d);
+    console.log(&#39;num:&#39;,this.num);
+  &#125;,
+  &#x2F;&#x2F; 这时最新数据被渲染到页面上
+  updated()&#123;
+    console.log(&#39;updated----更新后&#39;);
+    const d&#x3D;document.getElementById(&#39;d&#39;);
+    console.log(&#39;dom:&#39;,d);
+    console.log(&#39;num:&#39;,this.num);
+  &#125;,
+  &#x2F;&#x2F; 此时还可以访问到dom元素，data和methods也还存在
+  beforeUnmount()&#123;
+    console.log(&#39;beforeDestroy----销毁前&#39;);
+    const d&#x3D;document.getElementById(&#39;d&#39;);
+    console.log(&#39;dom:&#39;,d);
+    console.log(&#39;num:&#39;,this.num);
+  &#125;,
+  &#x2F;&#x2F; 此时vue实例被销毁，所有东西不存在
+  unmounted()&#123;
+    console.log(&#39;destroyed----销毁后&#39;);
+    const d&#x3D;document.getElementById(&#39;d&#39;);
+    console.log(&#39;dom:&#39;,d);
+    console.log(&#39;num:&#39;,this.num);
+  &#125;,
+&#125;
+&lt;&#x2F;script&gt;
+&lt;style&gt;
+
+&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>结果</p>
+<p><img src="https://dong-image.oss-cn-guangzhou.aliyuncs.com/image/image-20230329112411592.png" alt="image-20230329112411592"></p>
+<p>vue实例被创建后会立即执行前四个钩子，只有当数据发生改变时才执行beforeUpdate和updated，后面两个是只有实例被销毁才执行。</p>
+
                 
             </div>
             <hr/>
@@ -439,7 +569,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://dong-002.github.io/2023/04/08/untitled/">http://dong-002.github.io/2023/04/08/untitled/</a>
+                    <a href="http://dong-002.github.io/2023/04/05/sheng-ming-zhou-qi/">http://dong-002.github.io/2023/04/05/sheng-ming-zhou-qi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -476,7 +606,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+                                    <span class="chip bg-color">生命周期</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -790,18 +924,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/04/08/untitled/">
+                <a href="/2023/04/06/pinia/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="pinia">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">pinia</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -811,18 +944,29 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-08
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-06
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Dong
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/vue/" class="post-category">
+                                    vue
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/pinia/">
+                        <span class="chip bg-color">pinia</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -833,13 +977,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/03/31/zu-jian/">
+                <a href="/2023/04/05/ji-suan-shu-xing-computed/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="组件">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="计算属性">
                         
-                        <span class="card-title">组件</span>
+                        <span class="card-title">计算属性</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -850,14 +994,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-05
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue/" class="post-category">
-                                    Vue
+                            <a href="/categories/vue/" class="post-category">
+                                    vue
                                 </a>
                             
                             
@@ -867,8 +1011,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BB%84%E4%BB%B6/">
-                        <span class="chip bg-color">组件</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
+                        <span class="chip bg-color">计算属性</span>
                     </a>
                     
                 </div>
@@ -1011,7 +1155,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">12.4k</span>
+                        class="white-color">22.3k</span>
             
             
             

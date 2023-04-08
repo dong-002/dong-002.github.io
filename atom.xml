@@ -6,7 +6,7 @@
   <link href="http://dong-002.github.io/atom.xml" rel="self"/>
   
   <link href="http://dong-002.github.io/"/>
-  <updated>2023-04-08T08:25:32.812Z</updated>
+  <updated>2023-04-08T08:45:18.154Z</updated>
   <id>http://dong-002.github.io/</id>
   
   <author>
@@ -17,15 +17,324 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://dong-002.github.io/2023/04/08/untitled/"/>
-    <id>http://dong-002.github.io/2023/04/08/untitled/</id>
-    <published>2023-04-08T08:25:32.812Z</published>
-    <updated>2023-04-08T08:25:32.812Z</updated>
+    <title>hash模式和history模式</title>
+    <link href="http://dong-002.github.io/2023/04/08/hash-mo-shi-he-history-mo-shi/"/>
+    <id>http://dong-002.github.io/2023/04/08/hash-mo-shi-he-history-mo-shi/</id>
+    <published>2023-04-07T16:00:00.000Z</published>
+    <updated>2023-04-08T08:45:18.154Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;hash模式&quot;&gt;&lt;a href=&quot;#hash模式&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
     
+    <category term="路由" scheme="http://dong-002.github.io/categories/%E8%B7%AF%E7%94%B1/"/>
+    
+    
+    <category term="路由" scheme="http://dong-002.github.io/tags/%E8%B7%AF%E7%94%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>导航守卫</title>
+    <link href="http://dong-002.github.io/2023/04/08/dao-hang-shou-wei/"/>
+    <id>http://dong-002.github.io/2023/04/08/dao-hang-shou-wei/</id>
+    <published>2023-04-07T16:00:00.000Z</published>
+    <updated>2023-04-08T08:43:39.565Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;导航守卫就是在路由跳转的时候进行一些操作或保护。比如一个用户直接修改URL进入管理页面，但是导航守卫检测到这个行为，把路由跳转到登录页面，让他进行登录。&lt;/p&gt;
+&lt;p&gt;导航解析&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;beforeRouteLeave守卫&lt;/li&gt;
+&lt;li&gt;全局守卫bef</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    <category term="路由" scheme="http://dong-002.github.io/categories/%E8%B7%AF%E7%94%B1/"/>
+    
+    
+    <category term="导航守卫" scheme="http://dong-002.github.io/tags/%E5%AF%BC%E8%88%AA%E5%AE%88%E5%8D%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>路由一</title>
+    <link href="http://dong-002.github.io/2023/04/08/lu-you-yi/"/>
+    <id>http://dong-002.github.io/2023/04/08/lu-you-yi/</id>
+    <published>2023-04-07T16:00:00.000Z</published>
+    <updated>2023-04-08T08:44:12.482Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;SPA（单页面应用）&quot;&gt;&lt;a href=&quot;#SPA（单页面应用）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    <category term="路由" scheme="http://dong-002.github.io/categories/%E8%B7%AF%E7%94%B1/"/>
+    
+    
+    <category term="路由" scheme="http://dong-002.github.io/tags/%E8%B7%AF%E7%94%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>路由三</title>
+    <link href="http://dong-002.github.io/2023/04/08/lu-you-san/"/>
+    <id>http://dong-002.github.io/2023/04/08/lu-you-san/</id>
+    <published>2023-04-07T16:00:00.000Z</published>
+    <updated>2023-04-08T08:44:36.698Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;路由元信息meta&quot;&gt;&lt;a href=&quot;#路由元信息meta&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    <category term="路由" scheme="http://dong-002.github.io/categories/%E8%B7%AF%E7%94%B1/"/>
+    
+    
+    <category term="路由" scheme="http://dong-002.github.io/tags/%E8%B7%AF%E7%94%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>路由二</title>
+    <link href="http://dong-002.github.io/2023/04/08/lu-you-er/"/>
+    <id>http://dong-002.github.io/2023/04/08/lu-you-er/</id>
+    <published>2023-04-07T16:00:00.000Z</published>
+    <updated>2023-04-08T08:44:26.080Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;接着上一篇路由继续记录。&lt;/p&gt;
+&lt;h3 id=&quot;路由常见方法&quot;&gt;&lt;a href=&quot;#路由常见方法&quot; class=&quot;headerlink&quot; title=&quot;路由常见方法&quot;&gt;&lt;/a&gt;路由常见方法&lt;/h3&gt;&lt;h4 id=&quot;router-push&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    <category term="路由" scheme="http://dong-002.github.io/categories/%E8%B7%AF%E7%94%B1/"/>
+    
+    
+    <category term="路由" scheme="http://dong-002.github.io/tags/%E8%B7%AF%E7%94%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pinia</title>
+    <link href="http://dong-002.github.io/2023/04/06/pinia/"/>
+    <id>http://dong-002.github.io/2023/04/06/pinia/</id>
+    <published>2023-04-05T16:00:00.000Z</published>
+    <updated>2023-04-08T08:42:37.066Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    
+    <category term="pinia" scheme="http://dong-002.github.io/tags/pinia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生命周期</title>
+    <link href="http://dong-002.github.io/2023/04/05/sheng-ming-zhou-qi/"/>
+    <id>http://dong-002.github.io/2023/04/05/sheng-ming-zhou-qi/</id>
+    <published>2023-04-04T16:00:00.000Z</published>
+    <updated>2023-04-08T08:38:04.721Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;vue生命周期就是指组件被创建到被销毁的过程&lt;/p&gt;
+&lt;h3 id=&quot;生命周期钩子&quot;&gt;&lt;a href=&quot;#生命周期钩子&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    
+    <category term="生命周期" scheme="http://dong-002.github.io/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算属性</title>
+    <link href="http://dong-002.github.io/2023/04/05/ji-suan-shu-xing-computed/"/>
+    <id>http://dong-002.github.io/2023/04/05/ji-suan-shu-xing-computed/</id>
+    <published>2023-04-04T16:00:00.000Z</published>
+    <updated>2023-04-08T08:38:34.846Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;计算属性是用来描述依赖响应式状态的复杂逻辑。&lt;/p&gt;
+&lt;p&gt;在以下代码中所写的逻辑太复杂，写到template中显得太臃肿，我们想要判断作者是否有写过书，可以通过计算属性来描述这个逻辑。&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-vue&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    
+    <category term="计算属性" scheme="http://dong-002.github.io/tags/%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>监听器</title>
+    <link href="http://dong-002.github.io/2023/04/04/jian-ting-qi-watch/"/>
+    <id>http://dong-002.github.io/2023/04/04/jian-ting-qi-watch/</id>
+    <published>2023-04-03T16:00:00.000Z</published>
+    <updated>2023-04-08T08:37:32.011Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;监听器用于监听响应式数据。当响应式数据发生了改变可以进行相应的操作。&lt;/p&gt;
+&lt;h3 id=&quot;监听ref&quot;&gt;&lt;a href=&quot;#监听ref&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    
+    <category term="监听器" scheme="http://dong-002.github.io/tags/%E7%9B%91%E5%90%AC%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模板引用</title>
+    <link href="http://dong-002.github.io/2023/04/03/mo-ban-yin-yong/"/>
+    <id>http://dong-002.github.io/2023/04/03/mo-ban-yin-yong/</id>
+    <published>2023-04-02T16:00:00.000Z</published>
+    <updated>2023-04-08T08:37:01.153Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在vue中我们需要访问DOM元素，可以通过给元素添加ref从而获得它的引用&lt;/p&gt;
+&lt;h3 id=&quot;访问dom节点&quot;&gt;&lt;a href=&quot;#访问dom节点&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    
+    <category term="模板引用" scheme="http://dong-002.github.io/tags/%E6%A8%A1%E6%9D%BF%E5%BC%95%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>组件传递数据</title>
+    <link href="http://dong-002.github.io/2023/04/02/ye-sun-zu-jian-chuan-di-shu-ju/"/>
+    <id>http://dong-002.github.io/2023/04/02/ye-sun-zu-jian-chuan-di-shu-ju/</id>
+    <published>2023-04-01T16:00:00.000Z</published>
+    <updated>2023-04-08T08:34:39.169Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;对于父子组件的传递数据，可以通过prop进行传递，但是如果是爷爷向孙子传递数据呢？我们需要在爸爸中定义defineProps拿到爷爷传来的数据，然后在孙子中也定义defineProps，爸爸把刚刚拿到的数据在传递给孙子。&lt;/p&gt;
+&lt;p&gt;对于爸爸来说根本用不到这些数据，只是孙</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    
+    <category term="组件传递数据" scheme="http://dong-002.github.io/tags/%E7%BB%84%E4%BB%B6%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>插槽</title>
+    <link href="http://dong-002.github.io/2023/04/01/cha-cao/"/>
+    <id>http://dong-002.github.io/2023/04/01/cha-cao/</id>
+    <published>2023-03-31T16:00:00.000Z</published>
+    <updated>2023-04-08T08:33:45.678Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;插槽就是一个占位符，用于在子组件中占位置，然后把父组件传来的内容渲染到这个位置。&lt;/p&gt;
+&lt;h3 id=&quot;插槽作用&quot;&gt;&lt;a href=&quot;#插槽作用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
+    
+    
+    <category term="插槽" scheme="http://dong-002.github.io/tags/%E6%8F%92%E6%A7%BD/"/>
     
   </entry>
   
@@ -34,7 +343,7 @@
     <link href="http://dong-002.github.io/2023/03/31/zu-jian/"/>
     <id>http://dong-002.github.io/2023/03/31/zu-jian/</id>
     <published>2023-03-30T16:00:00.000Z</published>
-    <updated>2023-04-08T08:27:11.000Z</updated>
+    <updated>2023-04-08T08:32:26.268Z</updated>
     
     
       
@@ -48,7 +357,7 @@
     
     
     
-    <category term="Vue" scheme="http://dong-002.github.io/categories/Vue/"/>
+    <category term="vue" scheme="http://dong-002.github.io/categories/vue/"/>
     
     
     <category term="组件" scheme="http://dong-002.github.io/tags/%E7%BB%84%E4%BB%B6/"/>
@@ -237,62 +546,6 @@
     
     
     <category term="vue" scheme="http://dong-002.github.io/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>npm的使用</title>
-    <link href="http://dong-002.github.io/2022/10/06/npm-de-shi-yong/"/>
-    <id>http://dong-002.github.io/2022/10/06/npm-de-shi-yong/</id>
-    <published>2022-10-06T14:08:21.000Z</published>
-    <updated>2022-10-16T08:51:36.341Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;npm是一个包管理工具，所谓的包也就是第三方模块，好比如jQuery这些，当然我们也可以自定义模块，但是在实际应用中都是导入包来实现功能。npm是跟随着node.js的下载而有的，可以通过npm -v来查看版本号。&lt;/p&gt;
-&lt;h4 id=&quot;项目新建&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="技能学习" scheme="http://dong-002.github.io/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="前端" scheme="http://dong-002.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="npm" scheme="http://dong-002.github.io/tags/npm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git的简单使用</title>
-    <link href="http://dong-002.github.io/2022/10/06/git-de-jian-dan-shi-yong/"/>
-    <id>http://dong-002.github.io/2022/10/06/git-de-jian-dan-shi-yong/</id>
-    <published>2022-10-06T09:39:53.000Z</published>
-    <updated>2022-11-27T16:18:52.336Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Git是一个分布式版本控制系统，分布式就是每个客户端都保存版本，当然服务器上也保存版本，但是当服务器发生问题时可以从客户端得到完整版本，不用担心版本丢失。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;设置账号名和邮箱，在将文件提交到仓库中时需要提供账号和邮箱，记录谁干了什么。&lt;/p&gt;
-&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="技能学习" scheme="http://dong-002.github.io/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="git" scheme="http://dong-002.github.io/tags/git/"/>
     
   </entry>
   
